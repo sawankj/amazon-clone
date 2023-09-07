@@ -173,7 +173,8 @@ span{
     width: 23%;
     background-color: white;
     padding: 20px 0px 15px;
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 
 }
 
@@ -192,10 +193,15 @@ span{
 .box-content p {
     color:#007185;
 }
+.box-content h2{/*MAKE IT SINGLE LINE AND HIDE OVERFLOW YEHE*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
 
 /**footer**/
 footer{
-    margin-top: 15px;
+    margin-top: 0px;
 }
 .foot-panel1{
     background-color: #37475a;
@@ -259,6 +265,7 @@ ul a{
     padding-top: 5px;
 }
 
+/**Making it responsive**/
 @media(max-width:1394px){
     html{
         font-size: 85%;
@@ -271,6 +278,31 @@ ul a{
 }
 @media(max-width:750px){
     html{
-        font-size: 50%;
+        font-size: 60%;
     }
+    .panel-ops p{
+        margin-left: 4px;
+
+    }
+    .panel-ops{
+        width: 60%;
+    }
+    .box{
+        width:48%;
+        height:300px;
+        margin-top: 2px;
+        margin-bottom: 6px;
+    }
+    .box-img{
+        height: 250px;
+    }
+    .hero-section{
+        background-image: url("sm_hero_image.png");
+        height: 190px;
+    }
+    .hero-msg{
+        height:25px;
+        width:75%;
+    }
+    
 }
